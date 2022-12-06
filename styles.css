@@ -30,11 +30,8 @@ span{
     top:50%;
     column-gap: 3rem;
     transform: translateY(-50%) translateX(-50%);
-    width: 50%;
+    width: 50vw;
     display: flex;
-
-    
-    
 }
 
 #fylo{
@@ -53,7 +50,6 @@ span{
     font-size: 2.5rem;
     font-weight:bold;
     padding: 3rem;
-
 }
 
 
@@ -101,6 +97,147 @@ span{
     align-self: center;
 
 }
-#icon3{
+#upload-icon{
     margin-bottom: 40%;
 }
+
+#progress{
+
+    width:40vw;
+    background-color:hsl(229, 54%, 18%) ;
+    border-radius: 12px;
+    height: 12px;
+    align-self: center;
+    margin-top: 18px;
+    padding: 3px;
+    padding-top: 3.5px;
+}
+#progress-bar-fill{
+   position: flex;
+    background-color: hsl(6, 100%, 80%);
+    height: 12px;
+    width: 75%;
+    border-radius: 10px;
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    align-items: center;
+    /*animate when change the width*/
+}
+
+
+.prog-text{
+    position: relative;
+    display: inline-block;
+}
+
+#progress-text{
+    position: relative;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 40vw;
+    margin-top: 5px;
+    font-size: 1rem;
+}
+#min-capacity{
+    left: 0%;
+}
+#max-capacity{
+    position:fixed;
+    right:0;
+
+}
+
+#circle{
+    position: relative;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color:#fff;
+    border: 1px solid hsl(229, 57%, 11%);
+    z-index: 1;
+    left:3px;
+    float: right;
+    
+    
+}
+#GB-left {
+    position: absolute;
+    right: 32px;
+    top: -30px;
+    background-color: #fff;
+    color: hsl(229, 7%, 55%);
+    padding: 15px;
+    border-radius: 10px 10px 0 10px;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0;
+    width:130px;
+}
+#GB-left::before {
+    content: "";
+    background-color: #fff;
+    height: 30px;
+    width: 40px;
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+
+#GB-left p {
+    display: inline-block;
+    margin: 0;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+#remain{
+    color: black;
+    font-size: 25px;
+}
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: relative;
+    left:50%;
+    top:60%;
+	z-index: -1;
+}
+
+.inputfile + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: red;
+    display: inline-block;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: cadetblue;
+}
+.inputfile + label {
+	cursor: pointer; /* "hand" cursor */
+}
+.inputfile:focus + label {
+	outline: 1px dotted #000;
+	outline: -webkit-focus-ring-color auto 5px;
+}
+/*<div class="icon-bg"><img class="icons" id="upload-icon" src="assets/icon-upload.svg" alt="upload"></div>*/
+.image-upload>input {
+    display: none;
+  }
+  #file-input{
+    background-color: hsl(229, 54%, 18%);
+  }
+ 
+
+
+  #document-icon{
+    cursor: pointer;
+  }
+  
