@@ -116,11 +116,12 @@ span{
    position: flex;
     background-color: hsl(6, 100%, 80%);
     height: 12px;
-    width: 75%;
+    width: 0%;
     border-radius: 10px;
     background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
     align-items: center;
     /*animate when change the width*/
+    transition: width 1s ease-in-out;
 }
 
 
@@ -160,6 +161,7 @@ span{
     z-index: 1;
     left:3px;
     float: right;
+    
     
     
 }

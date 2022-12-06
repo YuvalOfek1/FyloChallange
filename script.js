@@ -50,7 +50,12 @@ function updateProgress(){
     maxCapacity.innerText = totalSize + sizeUnit;
     progressBar.style.width = 100*(parseInt(progress)/totalSize) + '%';
     console.log(remainCapacity);
-    
+    if(progress==0){
+        circle.style.left = 10 + "px";
+    }
+    else{
+        circle.style.left = 0 + "px";
+    }
 }
 
 
